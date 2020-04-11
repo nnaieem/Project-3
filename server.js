@@ -30,7 +30,7 @@ app.get('/api/items', (req,res) => {
         .then((items) => {
             res.json(items);
         })
-        .cath((err) => {
+        .catch((err) => {
             res.json(err);
         });
 });
